@@ -160,6 +160,91 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.about-page header {
+  width: 100%;
+  height: 75px;
+  background-color: #011f4b;
+}
+.about-page header h1 {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  font-size: 48px;
+  line-height: 75px;
+  color: white;
+}
+.about-page section {
+  margin: 50px auto;
+  display: flex;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .about-page section {
+    flex-direction: column;
+  }
+}
+.about-page section section {
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .about-page section section {
+    width: 100%;
+  }
+}
+.about-page section section h2 {
+  height: 20%;
+  width: 100%;
+}
+.about-page section section p {
+  height: 80%;
+  width: 100%;
+}
+.about-page section img {
+  width: 40%;
+  background-color: aqua;
+}
+@media (max-width: 800px) {
+  .about-page section img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.about-page .reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .about-page .reverse {
+    flex-direction: column;
+  }
+}
+.about-page .contact-us {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.about-page .contact-us h2 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.about-page .contact-us h4 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.about-page .contact-us input {
+  width: 50%;
+  margin: 10px 0px;
+}
+.about-page hr {
+  width: 80%;
+  margin: 20px auto;
+}
+.about-page footer {
+  width: 100%;
+  height: 75px;
+  background-color: #011f4b;
+}
 .main-section {
   width: 100%;
   margin: 0 auto;
@@ -188,5 +273,5 @@ header nav {
 header nav a {
   margin-top: 2rem;
   text-decoration: none;
-  color: #005b96;
+  color: #0a0b0c;
 }
