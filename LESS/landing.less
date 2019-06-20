@@ -1,36 +1,45 @@
 .main-section {
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: space-evenly;
-    margin: 3rem 0 3rem;
+    display           : flex;
+    flex-direction    : row;
+    justify-content   : space-between;
+    width             : 80%;
+    margin            : 5rem auto;
+
+    @media (max-width:800px) {
+        flex-direction: column;
+    }
 
     .main-content {
-        width         : 48%;
-        padding       : 0 1%;
-        padding-bottom: 2rem;
-        // margin: 0 auto;
+        display           : flex;
+        flex-direction    : column;
+        width             : 40%;
+        // padding        : 0 1%;
+        padding-bottom    : 2rem;
+        margin            : 0 auto;
 
         p {
-            color: red;
-            font-size:2.5rem;
+            color        : red;
+            font-size    : 4.5rem;
             margin-bottom: 2rem;
-            padding: 2.5rem;
+            padding      : 2.5rem;
         }
 
         button {
-            width: 200px;
-            height: 75px;
-            margin: 2rem 0 2rem 5.5rem;
+            width    : 200px;
+            height   : 75px;
+            margin   : 0 auto;
         }
 
         button a {
-             text-decoration: none;
+            text-decoration: none;
         }
 
-        // img {
-        //  margin: 0 auto;
-        //     background: url();
-        // }
+    }
+
+    img {
+        width        : 40%;
+        margin       : 0 auto;
+        // background: url();
     }
 
 }

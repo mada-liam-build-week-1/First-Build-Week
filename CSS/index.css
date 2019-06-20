@@ -246,28 +246,40 @@ p {
 }
 .main-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 3rem 0 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+}
+@media (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+  }
 }
 .main-section .main-content {
-  width: 48%;
-  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   padding-bottom: 2rem;
+  margin: 0 auto;
 }
 .main-section .main-content p {
   color: red;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
   padding: 2.5rem;
 }
 .main-section .main-content button {
   width: 200px;
   height: 75px;
-  margin: 2rem 0 2rem 5.5rem;
+  margin: 0 auto;
 }
 .main-section .main-content button a {
   text-decoration: none;
+}
+.main-section img {
+  width: 40%;
+  margin: 0 auto;
 }
 header {
   width: 100%;
