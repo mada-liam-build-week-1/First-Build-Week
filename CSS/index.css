@@ -175,7 +175,7 @@ p {
   color: white;
 }
 .about-page section {
-  margin: 50px 0px;
+  margin: 50px auto;
   display: flex;
   width: 80%;
 }
@@ -193,8 +193,35 @@ p {
   width: 100%;
 }
 .about-page section img {
-  width: 50%;
+  width: 40%;
+  background-color: aqua;
 }
 .about-page .reverse {
   flex-direction: row-reverse;
+}
+.about-page .contact-us {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.about-page .contact-us h2 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.about-page .contact-us h4 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.about-page .contact-us input {
+  width: 50%;
+  margin: 10px 0px;
+}
+.about-page hr {
+  width: 80%;
+  margin: 20px auto;
+}
+.about-page footer {
+  width: 100%;
+  height: 75px;
+  background-color: #011f4b;
 }
