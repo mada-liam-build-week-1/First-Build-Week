@@ -173,10 +173,16 @@ p {
   line-height: 75px;
   color: white;
 }
+.about-page h1 {
+  display: block;
+  font-size: 75px;
+  text-align: center;
+}
 .about-page section {
   margin: 50px auto;
   display: flex;
   width: 80%;
+  align-items: center;
 }
 @media (max-width: 800px) {
   .about-page section {
@@ -196,6 +202,7 @@ p {
 .about-page section section h2 {
   height: 20%;
   width: 100%;
+  margin-bottom: 10px;
 }
 .about-page section section p {
   height: 80%;
@@ -203,12 +210,12 @@ p {
 }
 .about-page section img {
   width: 40%;
-  background-color: aqua;
+  height: 100%;
 }
 @media (max-width: 800px) {
   .about-page section img {
     width: 100%;
-    height: 200px;
+    height: auto;
   }
 }
 .about-page .reverse {
@@ -222,6 +229,7 @@ p {
 .about-page .contact-us {
   width: 50%;
   display: flex;
+  margin: 10px auto;
   flex-direction: column;
 }
 .about-page .contact-us h2 {
