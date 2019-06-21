@@ -264,15 +264,17 @@ p {
   margin: 0 auto;
 }
 .main-section .main-content p {
-  color: red;
   font-size: 4.5rem;
   margin-bottom: 2rem;
   padding: 2.5rem;
 }
 .main-section .main-content button {
-  width: 200px;
+  width: 20rem;
   height: 75px;
-  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 2rem;
+  margin: 8rem 2rem 0 20rem;
 }
 .main-section .main-content button a {
   text-decoration: none;
@@ -280,6 +282,36 @@ p {
 .main-section img {
   width: 40%;
   margin: 0 auto;
+}
+.footer-section {
+  width: 100%;
+}
+.footer-section .footer-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem auto;
+}
+.footer-section .footer-content ul {
+  margin: 2rem auto;
+}
+.footer-section .footer-content ul h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin: 0 0 0.5rem;
+}
+.footer-section .footer-content ul li {
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+}
+.footer-section aside {
+  width: 50%;
+  margin: 2rem auto;
 }
 header {
   width: 100%;
