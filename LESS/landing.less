@@ -1,14 +1,50 @@
 .main-section {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
+    display        : flex;
+    flex-direction : row;
     justify-content: space-between;
+    width          : 80%;
+    margin         : 5rem auto;
+
+    @media (max-width:800px) {
+        flex-direction: column;
     }
 
-// .main-section p {
-//     position: relative;
-//     left: 175px;
-//     bottom: 50px;
-    
-// }
+    .main-content {
+        display           : flex;
+        flex-direction    : column;
+        width             : 40%;
+        padding-bottom    : 2rem;
+        margin            : 0 auto;
+
+        p {
+            font-size    : 4.5rem;
+            margin-bottom: 2rem;
+            padding      : 2.5rem;
+        }
+
+        button {
+            width : 20rem;
+            height: 75px;
+            cursor: pointer;
+            border-radius: 1.2rem;
+            font-size: 2rem;
+            margin: 8rem 2rem 0 20rem;
+
+            // &:hover {
+
+            // }
+        }
+
+        button a {
+            text-decoration: none;
+        }
+
+    }
+
+    img {
+        width        : 40%;
+        margin       : 0 auto;
+        // background: url();
+    }
+
+}

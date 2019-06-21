@@ -156,7 +156,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -254,32 +253,84 @@ p {
   background-color: #011f4b;
 }
 .main-section {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+}
+@media (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+  }
+}
+.main-section .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+.main-section .main-content p {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+.main-section .main-content button {
+  width: 20rem;
+  height: 75px;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  font-size: 2rem;
+  margin: 8rem 2rem 0 20rem;
+}
+.main-section .main-content button a {
+  text-decoration: none;
+}
+.main-section img {
+  width: 40%;
+  margin: 0 auto;
+}
+.footer-section {
+  width: 100%;
+}
+.footer-section .footer-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem auto;
+}
+.footer-section .footer-content ul {
+  margin: 2rem auto;
+}
+.footer-section .footer-content ul h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin: 0 0 0.5rem;
+}
+.footer-section .footer-content ul li {
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+}
+.footer-section aside {
+  width: 50%;
+  margin: 2rem auto;
 }
 header {
-  display: flex;
   width: 100%;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  background-color: #b3cde0;
+  height: 75px;
+  background-color: #011f4b;
 }
 header h1 {
-  margin: 2rem 0rem 0rem 2rem;
-  width: 13%;
-  text-decoration: none;
-}
-header nav {
   display: flex;
-  width: 87%;
-  justify-content: space-around;
-  margin-left: 1rem;
-}
-header nav a {
-  margin-top: 2rem;
-  text-decoration: none;
-  color: #0a0b0c;
+  width: 40%;
+  height: 100%;
+  font-size: 48px;
+  line-height: 75px;
+  color: white;
 }
