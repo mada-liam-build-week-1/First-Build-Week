@@ -159,23 +159,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.about-page header {
-  width: 100%;
-  height: 75px;
-  background-color: #011f4b;
-}
-.about-page header h1 {
-  display: flex;
-  width: 40%;
-  height: 100%;
-  font-size: 48px;
-  line-height: 75px;
-  color: white;
-}
-.about-page h1 {
+.about-page #about-us {
   display: block;
   font-size: 75px;
   text-align: center;
+  margin-top: 40px;
 }
 .about-page section {
   margin: 50px auto;
@@ -322,15 +310,32 @@ p {
   margin: 2rem auto;
 }
 header {
+  display: flex;
   width: 100%;
   height: 75px;
   background-color: #011f4b;
 }
-header h1 {
-  display: flex;
+header #header-h1 {
   width: 40%;
   height: 100%;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 75px;
   color: white;
+}
+header nav {
+  width: 60%;
+  display: flex;
+}
+header nav a {
+  text-align: center;
+  line-height: 75px;
+  color: white;
+  text-decoration: none;
+  width: 25%;
+  height: 100%;
+  font-size: 20px;
+}
+header nav a:hover {
+  background-color: white;
+  color: #011f4b;
 }

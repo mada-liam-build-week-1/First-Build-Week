@@ -1,14 +1,31 @@
 header{
+    display: flex;
     width: 100%;
     height: 75px;
     background-color: @sapphire;
-    h1{
-        display: flex;
+    #header-h1{
         width: 40%;
         height: 100%;
-        font-size: 48px;
+        font-size: 50px;
         line-height: 75px;
         color: white;
+    }
+    nav{
+        width: 60%;
+        display: flex;
+        a{
+            text-align: center;
+            line-height: 75px;
+            color: white;
+            text-decoration: none;
+            width: 25%;
+            height: 100%;
+            font-size: 20px;
+        }
+        a:hover{
+            background-color: white;
+            color: @sapphire;
+        }
     }
 }
 
