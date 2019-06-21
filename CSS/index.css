@@ -315,25 +315,55 @@ header {
   height: 75px;
   background-color: #011f4b;
 }
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    height: 200px;
+  }
+}
 header #header-h1 {
   width: 40%;
   height: 100%;
-  font-size: 50px;
+  font-size: 3.5vw;
   line-height: 75px;
   color: white;
+}
+@media (max-width: 800px) {
+  header #header-h1 {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 3rem;
+  }
 }
 header nav {
   width: 60%;
   display: flex;
 }
+@media (max-width: 800px) {
+  header nav {
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+  }
+}
 header nav a {
+  background-color: #011f4b;
   text-align: center;
-  line-height: 75px;
   color: white;
   text-decoration: none;
   width: 25%;
   height: 100%;
-  font-size: 20px;
+  font-size: 1.4vw;
+  line-height: 75px;
+}
+@media (max-width: 800px) {
+  header nav a {
+    width: 100%;
+    height: 25%;
+    font-size: 2rem;
+    line-height: 30px;
+  }
 }
 header nav a:hover {
   background-color: white;
