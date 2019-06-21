@@ -381,3 +381,27 @@ header nav a:hover {
   background-color: white;
   color: #011f4b;
 }
+.history-container {
+  max-width: 800%;
+  width: 800px;
+  margin: 0 auto;
+  padding: 5rem 0 4.5rem 0;
+}
+.history-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: strecth;
+}
+.history-container .row .history-header {
+  margin: 0 0 2rem 0;
+}
+.history-container .row h2 {
+  font-size: 2.8rem;
+  margin: 0 0 1.25rem 0;
+}
+.history-container .row h3 {
+  font-size: 2rem;
+}
+.history-container .row p {
+  margin: 0 0 2em 0;
+}
