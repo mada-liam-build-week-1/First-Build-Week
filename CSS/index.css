@@ -402,6 +402,27 @@ header nav a:hover {
 .history-container .row h3 {
   font-size: 2rem;
 }
+.history-container .row .box-container .box-links {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.history-container .row .box-container .box-links .link {
+  padding: 2.5rem 4.5rem;
+  background: lightgray;
+  border: 0.1 rem solid black;
+  cursor: pointer;
+}
+.history-container .row .box-container .box-content {
+  width: 100%;
+  margin-top: 2rem;
+  background: lightgray;
+}
+.history-container .row .box-container .box-content .content {
+  padding: 2rem;
+  border: 0.1rem solid black;
+  display: none;
+}
 .history-container .row p {
   margin: 0 0 2em 0;
 }
