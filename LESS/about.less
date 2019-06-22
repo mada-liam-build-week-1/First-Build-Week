@@ -54,7 +54,37 @@
         margin: 20px auto;
     }
 
-    .hidden{
-        display: none;
+    #carousel{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        @media (max-width:800px){
+            flex-direction: row;
+        }
+        .hidden{
+            display: none;
+        }
+        img{
+            width: 50%;
+        }
+        #right-button{
+            margin-right: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+        }
+        #left-button{
+            margin-left: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+        }
     }
 }
