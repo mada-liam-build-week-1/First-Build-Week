@@ -253,6 +253,7 @@ p {
   margin: 20px auto;
 }
 .about-page #carousel {
+  height: 40vw;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -267,7 +268,8 @@ p {
   display: none;
 }
 .about-page #carousel img {
-  width: 50%;
+  width: auto;
+  height: 100%;
 }
 .about-page #carousel #right-button {
   margin-right: 15vw;
@@ -278,6 +280,11 @@ p {
   width: 40px;
   height: 40px;
 }
+@media (max-width: 1000px) {
+  .about-page #carousel #right-button {
+    margin-right: 10vw;
+  }
+}
 .about-page #carousel #left-button {
   margin-left: 15vw;
   color: white;
@@ -286,6 +293,11 @@ p {
   border-radius: 100px;
   width: 40px;
   height: 40px;
+}
+@media (max-width: 1000px) {
+  .about-page #carousel #left-button {
+    margin-left: 10vw;
+  }
 }
 .main-section {
   display: flex;

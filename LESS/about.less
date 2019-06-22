@@ -55,6 +55,7 @@
     }
 
     #carousel{
+        height: 40vw;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -66,7 +67,8 @@
             display: none;
         }
         img{
-            width: 50%;
+            width:auto;
+            height: 100%;
         }
         #right-button{
             margin-right: 15vw;
@@ -76,6 +78,9 @@
             border-radius: 100px;
             width: 40px;
             height: 40px;
+            @media (max-width:1000px){
+                margin-right: 10vw;
+            }
         }
         #left-button{
             margin-left: 15vw;
@@ -85,6 +90,9 @@
             border-radius: 100px;
             width: 40px;
             height: 40px;
+            @media (max-width:1000px){
+                margin-left: 10vw;
+            }
         }
     }
 }
