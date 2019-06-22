@@ -252,6 +252,9 @@ p {
   width: 80%;
   margin: 20px auto;
 }
+.about-page .hidden {
+  display: none;
+}
 .main-section {
   display: flex;
   flex-direction: row;
