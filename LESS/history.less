@@ -9,7 +9,8 @@
     .row {
         display    : flex;
         flex-wrap  : wrap;
-        align-items: strecth;
+
+        // align-items: strecth;
 
         .history-header {
             margin: 0 0 2rem 0;
@@ -25,10 +26,13 @@
         }
 
         .box-container {
+            // display: flex;
+            // justify-content: space-evenly;
+
             .box-links {
-                margin     : 2rem;
+                margin         : 2rem;
                 display        : flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
 
                 .link {
                     padding   : 2.5rem 4.5rem;
@@ -39,21 +43,24 @@
             }
 
             .box-content {
-                width: 100%;
+                width     : 100%;
                 margin-top: 2rem;
-                background: lightgray;
 
                 .content {
-                    padding: 2rem;
-                    border: .1rem solid black;
+                    padding   : 2rem;
+                    // border : .1rem solid black;
                     display: none;
-                };
+                }
+
+                .change {
+                    display: block;
+                }
 
             }
         }
 
         p {
-            margin: 0 0 2em 0;
+            margin: 0 0 2rem 0;
         }
     }
 }
