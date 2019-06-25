@@ -53,4 +53,46 @@
         width: 80%;
         margin: 20px auto;
     }
+
+    #carousel{
+        height: 40vw;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        @media (max-width:800px){
+            flex-direction: row;
+        }
+        .hidden{
+            display: none;
+        }
+        img{
+            width:auto;
+            height: 100%;
+        }
+        #right-button{
+            margin-right: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            @media (max-width:1000px){
+                margin-right: 10vw;
+            }
+        }
+        #left-button{
+            margin-left: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            @media (max-width:1000px){
+                margin-left: 10vw;
+            }
+        }
+    }
 }

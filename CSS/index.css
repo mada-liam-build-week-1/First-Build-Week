@@ -252,6 +252,53 @@ p {
   width: 80%;
   margin: 20px auto;
 }
+.about-page #carousel {
+  height: 40vw;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media (max-width: 800px) {
+  .about-page #carousel {
+    flex-direction: row;
+  }
+}
+.about-page #carousel .hidden {
+  display: none;
+}
+.about-page #carousel img {
+  width: auto;
+  height: 100%;
+}
+.about-page #carousel #right-button {
+  margin-right: 15vw;
+  color: white;
+  background-color: #03396c;
+  border-width: 1px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 1000px) {
+  .about-page #carousel #right-button {
+    margin-right: 10vw;
+  }
+}
+.about-page #carousel #left-button {
+  margin-left: 15vw;
+  color: white;
+  background-color: #03396c;
+  border-width: 1px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 1000px) {
+  .about-page #carousel #left-button {
+    margin-left: 10vw;
+  }
+}
 .main-section {
   display: flex;
   flex-direction: row;
