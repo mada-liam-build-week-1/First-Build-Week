@@ -1,31 +1,66 @@
-.history-container{
-        max-width: 800%;
-        width: 800px;
-        // margin-top: 5rem;
-        margin: 0 auto;
-        padding: 5rem 0 4.5rem 0;
-        
-        
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: strecth;
+.history-container {
+    max-width    : 800%;
+    width        : 800px;
+    // margin-top: 5rem;
+    margin       : 0 auto;
+    padding      : 5rem 0 4.5rem 0;
 
-            .history-header {
-                margin: 0 0 2rem 0;
+
+    .row {
+        display    : flex;
+        flex-wrap  : wrap;
+
+        // align-items: strecth;
+
+        .history-header {
+            margin: 0 0 2rem 0;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            margin   : 0 0 1.25rem 0;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .box-container {
+            // display: flex;
+            // justify-content: space-evenly;
+
+            .box-links {
+                margin         : 2rem;
+                display        : flex;
+                justify-content: space-between;
+
+                .link {
+                    padding   : 2.5rem 4.5rem;
+                    background: lightgray;
+                    border    : .1 rem solid black;
+                    cursor    : pointer;
+                }
             }
 
-            h2 {
-                font-size: 2.8rem;
-                margin: 0 0 1.25rem 0;
-            }
-            
-            h3 {
-                font-size: 2rem;
-            }
-            
-            p {
-                margin: 0 0 2em 0;
+            .box-content {
+                width     : 100%;
+                margin-top: 2rem;
+
+                .content {
+                    padding   : 2rem;
+                    // border : .1rem solid black;
+                    display: none;
+                }
+
+                .change {
+                    display: block;
+                }
+
             }
         }
+
+        p {
+            margin: 0 0 2rem 0;
+        }
     }
+}
