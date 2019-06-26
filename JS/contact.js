@@ -13,7 +13,7 @@ class FallingObject{
 
     fall(){
         this.xpos++;
-        if(this.xpos >= screenHeight-30){
+        if(this.xpos >= screenHeight-10){
             clearInterval(this.interval);
         }
         this.element.style.top = `${this.xpos}px`;
@@ -29,7 +29,7 @@ class FallingObject{
     }
 }
 
-let screenHeight = window.innerHeight;
+let screenHeight = document.querySelector(".contact-page").clientHeight;
 let sendBtn = document.querySelector("#send-btn");
 let name = document.querySelector("#full-name");
 let email = document.querySelector("#email");
@@ -38,7 +38,7 @@ let body = document.querySelector("#contact-body");
 let items = [name,email,body];
 
 sendBtn.addEventListener("click", () => {
-    setInterval(spawnItem, 1000);
+    setInterval(spawnItem, 500);
 });
 
 function spawnItem(){

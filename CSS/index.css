@@ -160,7 +160,13 @@ p {
   margin: 0 auto;
 }
 .contact-page {
+  min-height: 100vh;
   overflow: hidden;
+}
+@media (max-width: 800px) {
+  .contact-page {
+    overflow: visible;
+  }
 }
 .contact-page #contact-h1 {
   font-size: 75px;
