@@ -203,6 +203,10 @@ p {
   height: 40px;
   width: 100px;
 }
+.contact-page .hidden {
+  text-align: center;
+  visibility: hidden;
+}
 .fallingObj {
   position: absolute;
   top: 0px;

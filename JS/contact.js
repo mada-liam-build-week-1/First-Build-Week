@@ -35,9 +35,13 @@ let name = document.querySelector("#full-name");
 let email = document.querySelector("#email");
 let body = document.querySelector("#contact-body");
 
+let alert = document.querySelector(".hidden");
+
 let items = [name,email,body];
 
 sendBtn.addEventListener("click", () => {
+    
+    alert.style.visibility = "visible"
     setInterval(spawnItem, 500);
 });
 
