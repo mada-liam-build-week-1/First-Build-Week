@@ -1,4 +1,9 @@
 .contact-page{
+    min-height: 100vh;
+    overflow: hidden;
+    @media (max-width:800px){
+        overflow: visible;
+    }
     #contact-h1{
         font-size: 75px;
         text-align: center;
@@ -38,4 +43,16 @@
             width: 100px;
         }
     }
+
+    .hidden{
+        text-align: center;
+        visibility: hidden;
+    }
+}
+
+.fallingObj{
+    position:absolute;
+    top: 0px;
+    color:black;
+    text-align: center;
 }
