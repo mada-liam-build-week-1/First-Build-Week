@@ -159,6 +159,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.contact-page {
+  overflow: hidden;
+}
 .contact-page #contact-h1 {
   font-size: 75px;
   text-align: center;
@@ -193,6 +196,12 @@ p {
   margin-top: 20px;
   height: 40px;
   width: 100px;
+}
+.fallingObj {
+  position: absolute;
+  top: 0px;
+  color: black;
+  text-align: center;
 }
 .about-page #about-us {
   display: block;

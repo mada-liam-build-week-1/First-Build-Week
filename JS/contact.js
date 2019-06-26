@@ -6,11 +6,8 @@ class FallingObject{
         this.element = document.createElement("p");
         this.element.append(this.textNode);
         document.querySelector("body").appendChild(this.element);
-        this.element.style.position = "absolute";
-        this.element.style.left = `${ypos}px`;
-        this.element.style.top = "0px";
-        this.element.style.color = "black";
-        this.element.style.textAlign = "center";
+        this.element.classList.add("fallingObj");
+        this.element.style.left = `${ypos}px`
         this.interval = setInterval(this.fall.bind(this),5);
     }
 
