@@ -281,6 +281,8 @@ p {
 @media (max-width: 800px) {
   .about-page #carousel {
     flex-direction: row;
+    margin-top: 20px;
+    height: 60vw;
   }
 }
 .about-page #carousel .hidden {
@@ -289,6 +291,18 @@ p {
 .about-page #carousel img {
   width: auto;
   height: 100%;
+}
+@media (max-width: 800px) {
+  .about-page #carousel img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .about-page #carousel img {
+    width: 100%;
+    height: auto;
+  }
 }
 .about-page #carousel #right-button {
   margin-right: 15vw;
@@ -304,6 +318,21 @@ p {
     margin-right: 10vw;
   }
 }
+@media (max-width: 800px) {
+  .about-page #carousel #right-button {
+    margin-right: 2vw;
+  }
+}
+@media (max-width: 500px) {
+  .about-page #carousel #right-button {
+    position: absolute;
+    right: 15px;
+    margin-right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #011f4b90;
+  }
+}
 .about-page #carousel #left-button {
   margin-left: 15vw;
   color: white;
@@ -316,6 +345,21 @@ p {
 @media (max-width: 1000px) {
   .about-page #carousel #left-button {
     margin-left: 10vw;
+  }
+}
+@media (max-width: 800px) {
+  .about-page #carousel #left-button {
+    margin-left: 2vw;
+  }
+}
+@media (max-width: 500px) {
+  .about-page #carousel #left-button {
+    position: absolute;
+    left: 15px;
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #011f4b90;
   }
 }
 .main-section {
