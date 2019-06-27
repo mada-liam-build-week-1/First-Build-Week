@@ -466,6 +466,7 @@ header nav {
     flex-direction: column;
     width: 100%;
     height: 70%;
+    margin-top: 14px;
   }
 }
 header nav a {
@@ -486,21 +487,43 @@ header nav a p {
   header nav a {
     width: 100%;
     height: 25%;
-    font-size: 2rem;
-    line-height: 30px;
+  }
+  header nav a p {
+    display: inline-block;
+    margin-top: 0%;
+    font-size: 1.6rem;
   }
 }
 header nav #contact-us {
   width: 15%;
   margin-left: 35%;
 }
+@media (max-width: 800px) {
+  header nav #contact-us {
+    width: 100%;
+    height: 25%;
+    margin-left: 0;
+  }
+  header nav #contact-us p {
+    display: inline-block;
+    margin-top: 0%;
+    font-size: 1.6rem;
+  }
+}
 header nav .selected p {
   border-bottom-width: 5px;
   border-style: solid;
 }
-header nav a:hover {
-  background-color: white;
-  color: #03396c;
+@media (max-width: 800px) {
+  header nav .selected p {
+    border-bottom-width: 3px;
+  }
+}
+@media (min-width: 800px) {
+  header nav a:hover {
+    background-color: white;
+    color: #03396c;
+  }
 }
 .history-container {
   max-width: 800px;

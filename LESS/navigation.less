@@ -29,6 +29,7 @@ header{
             flex-direction: column;
             width: 100%;
             height: 70%;
+            margin-top: 14px;
         }
         a{
             background-color: @prussian-blue;
@@ -46,24 +47,42 @@ header{
             @media (max-width: 800px) {
                 width: 100%;
                 height: 25%;
-                font-size: 2rem;
-                line-height: 30px;
+                p{
+                    display: inline-block;
+                    margin-top:0%;
+                    font-size: 1.6rem;
+                }
             }
         }
         #contact-us{
             width: 15%;
             margin-left: 35%;
+            @media (max-width: 800px) {
+                width: 100%;
+                height: 25%;
+                margin-left: 0;
+                p{
+                    display: inline-block;
+                    margin-top:0%;
+                    font-size: 1.6rem;
+                }
+            }
         }
         .selected{
             p{
                 border-bottom-width: 5px;
                 border-style: solid;
+                @media (max-width: 800px){
+                    border-bottom-width: 3px;
+                }
             }
         }
 
-        a:hover{
-            background-color: white;
-            color: @prussian-blue;
+        @media (min-width: 800px) {
+            a:hover{
+                background-color: white;
+                color: @prussian-blue;
+            }
         }
     }
 }
