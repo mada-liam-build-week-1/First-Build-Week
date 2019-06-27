@@ -281,7 +281,7 @@ p {
 @media (max-width: 800px) {
   .about-page #carousel {
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 60vw;
   }
 }
