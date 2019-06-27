@@ -544,7 +544,7 @@ header nav .selected p {
   flex: 1 0 auto;
 }
 .history-container .row .history-header {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem 2rem;
 }
 .history-container .row h2 {
   font-size: 2.8rem;
@@ -552,6 +552,7 @@ header nav .selected p {
 }
 .history-container .row h3 {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 800px) {
   .history-container .row {
@@ -563,26 +564,66 @@ header nav .selected p {
     text-align: center;
   }
 }
-.history-container .row .box-container .box-links {
+@media (max-width: 800px) and (max-width: 500px) {
+  .history-container .row h2,
+  .history-container .row h3 {
+    text-align: center;
+  }
+}
+.box-container .box-links {
   margin: 2rem;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
-.history-container .row .box-container .box-links .link {
+.box-container .box-links .link {
+  position: relative;
   padding: 2.5rem 4.5rem;
-  background: #b3cde0;
-  border: 0.1 rem solid black;
+  border: 0.2rem solid #03396c;
+  text-decoration: none;
+  color: #fff;
   cursor: pointer;
+  transition: 0.5s;
 }
-.history-container .row .box-container .box-content {
+.box-container .box-links .link:hover {
+  color: #03396c;
+}
+.box-container .box-links .link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 100%;
+  background: #03396c;
+  text-decoration: none;
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: scaleX(1);
+}
+.box-container .box-links .link:hover:before {
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+}
+@media (max-width: 500px) {
+  .box-container .box-links .link {
+    display: none;
+  }
+}
+.box-container .box-content {
   width: 100%;
   margin-top: 2rem;
 }
-.history-container .row .box-container .box-content .content {
+.box-container .box-content .content {
   padding: 2rem;
   display: none;
 }
-.history-container .row .box-container .box-content .change {
+@media (max-width: 500px) {
+  .box-container .box-content .content {
+    display: block;
+  }
+}
+.box-container .box-content .change {
   display: block;
 }
