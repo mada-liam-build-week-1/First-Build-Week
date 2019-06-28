@@ -3,9 +3,10 @@ header{
     width: 100%;
     height: 75px;
     background-color: @prussian-blue;
+    border-bottom: 2px dashed @shakespeare;
     @media (max-width: 800px) {
         flex-direction: column;
-        height: 200px;
+        height: auto;
     }
     #header-h1{
         width: 20%;
@@ -17,7 +18,7 @@ header{
         text-align: center;
         @media (max-width: 800px) {
             width: 100%;
-            height: 30%;
+            height: 60px;
             text-align: center;
             font-size: 3rem;
         }
@@ -28,8 +29,7 @@ header{
         @media (max-width: 800px) {
             flex-direction: column;
             width: 100%;
-            height: 70%;
-            margin-top: 14px;
+            margin-top: 5px;
         }
         a{
             background-color: @prussian-blue;
@@ -45,8 +45,9 @@ header{
                 margin-top: 25px;    
             }
             @media (max-width: 800px) {
+                display: none;
                 width: 100%;
-                height: 25%;
+                height: 30px;
                 p{
                     display: inline-block;
                     margin-top:0%;
@@ -90,5 +91,23 @@ header{
             }
         }
     }
+
+    #nav-button{
+        display: none;
+        @media (max-width:800px) {
+            display: inline;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color:white;
+            background-color: @prussian-blue;
+            border-style: none;
+            font-size: 4rem;
+            text-align: center;
+            height: 60px;
+            width: 60px;
+        }
+    }
+
 }
 
