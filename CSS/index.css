@@ -362,6 +362,7 @@ p {
     background-color: #011f4b90;
   }
 }
+/* <!-- Start of Main Section --> */
 .main-section {
   display: flex;
   flex-direction: row;
@@ -455,6 +456,8 @@ p {
 .main-section .main-content figure .logo1 {
   width: 70%;
 }
+/* <!-- End of Main Section --> */
+/*<!-- Start of Footer Section --> */
 .footer-section {
   max-height: 6vh;
   width: 100%;
@@ -472,6 +475,7 @@ p {
 #content-section {
   min-height: 94vh;
 }
+/*<!-- End of Footer Section --> */
 header {
   display: flex;
   width: 100%;
@@ -574,6 +578,7 @@ header nav .selected p {
     color: #03396c;
   }
 }
+/*<!-- Start of History Section --> */
 .history-container {
   max-width: 800px;
   width: 100%;
@@ -671,3 +676,4 @@ header nav .selected p {
 .box-container .box-content .change {
   display: block;
 }
+/*<!-- End of History Section --> */
