@@ -49,3 +49,91 @@ function spawnItem(){
     console.log(window.innerWidth);
     new FallingObject(items[Math.floor(Math.random() * 3)], Math.floor(Math.random()*window.innerWidth));
 }
+
+////
+//snake game
+////
+class Snake{
+    constructor(){
+        this.pos = [[100,0],[80,0],[60,0],[40,0],[20,0],[0,0]];
+        this.bodySections = [];
+        this.direction = 2;
+        this.update = 4;
+
+        this.pos.forEach((element,index) => {
+            this.bodySections[index] = document.createElement("div");
+            this.bodySections[index].classList.add("snk-bdy");
+            document.querySelector("body").appendChild(this.bodySections[index]);
+
+            this.bodySections[index].style.left = `${this.pos[index][0]}px`;
+            this.bodySections[index].style.top = `${this.pos[index][1]}px`;
+        });
+
+        document.onkeypress = (e) => {
+            if(e.key == "w" && this.direction != 2){
+                this.update = 0;
+            }
+            else if(e.key == "d" && this.direction != 3){
+                this.update = 1;
+            }
+            else if(e.key =="s" && this.direction != 0){
+                this.update = 2;
+            }
+            else if(e.key == "a" && this.direction != 1){
+                this.update = 3;
+            }
+        };
+
+        setInterval(this.move.bind(this), 200);
+    }
+
+    move(){
+        //update direction
+        if(this.update == 0){
+            this.direction = 0;
+            this.update = 4;
+        }
+        else if(this.update == 1){
+            this.direction = 1;
+            this.update = 4;
+        }
+        else if(this.update == 2){
+            this.direction = 2;
+            this.update = 4;
+        }
+        else if(this.update == 3){
+            this.direction = 3;
+            this.update = 4;
+        }
+
+        if(this.direction == 0){
+            this.pos.unshift([this.pos[0][0],this.pos[0][1] - 20]);
+        }
+        else if(this.direction == 1){
+            this.pos.unshift([this.pos[0][0] + 20,this.pos[0][1]]);
+        }
+        else if(this.direction == 2){
+            this.pos.unshift([this.pos[0][0],this.pos[0][1] + 20]);
+        }
+        else if(this.direction == 3){
+            this.pos.unshift([this.pos[0][0] - 20,this.pos[0][1]]);
+        }
+
+        this.pos.pop();
+
+
+        this.bodySections.forEach((element,index) => {
+            this.bodySections[index].style.left = `${this.pos[index][0]}px`;
+            this.bodySections[index].style.top = `${this.pos[index][1]}px`;
+        });
+    }
+
+    
+}
+
+
+let snkbtn = document.querySelector("#snk");
+
+snkbtn.addEventListener('click', () => {
+    new Snake();
+});
