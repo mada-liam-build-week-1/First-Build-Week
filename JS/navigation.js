@@ -18,3 +18,11 @@ navButton.addEventListener("click", (e) =>{
         showMenu = false;
     }
 });
+
+window.addEventListener("resize", (e) => {
+    if(window.innerWidth > 800){
+        links.forEach(element => {
+            element.style.display = "block"
+        });
+    }
+});
