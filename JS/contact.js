@@ -71,17 +71,19 @@ class Snake {
             this.bodySections[index].style.top = `${this.pos[index][1]}px`;
         });
 
-        document.onkeypress = (e) => {
-            if (e.key == "w" && this.direction != 2) {
+
+        document.onkeydown = (e) => {
+            console.log(e);
+            if((e.key == "w" || e.key == "ArrowUp") && this.direction != 2){
                 this.update = 0;
             }
-            else if (e.key == "d" && this.direction != 3) {
+            else if((e.key == "d" || e.key == "ArrowRight") && this.direction != 3){
                 this.update = 1;
             }
-            else if (e.key == "s" && this.direction != 0) {
+            else if((e.key =="s"|| e.key == "ArrowDown") && this.direction != 0){
                 this.update = 2;
             }
-            else if (e.key == "a" && this.direction != 1) {
+            else if((e.key == "a"|| e.key == "ArrowLeft") && this.direction != 1){
                 this.update = 3;
             }
         };
