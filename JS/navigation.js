@@ -25,4 +25,9 @@ window.addEventListener("resize", (e) => {
             element.style.display = "block"
         });
     }
+    if(window.innerWidth < 800){
+        links.forEach(element => {
+            element.style.display = "none"
+        });
+    }
 });
