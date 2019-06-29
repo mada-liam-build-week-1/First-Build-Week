@@ -54,11 +54,13 @@ function spawnItem(){
 //snake game
 ////
 class Snake{
-    constructor(){
+    constructor(block){
         this.pos = [[100,0],[80,0],[60,0],[40,0],[20,0],[0,0]];
         this.bodySections = [];
         this.direction = 2;
         this.update = 4;
+        this.addblock = block;
+        console.log(block);
 
         this.pos.forEach((element,index) => {
             this.bodySections[index] = document.createElement("div");
@@ -119,7 +121,19 @@ class Snake{
             this.pos.unshift([this.pos[0][0] - 20,this.pos[0][1]]);
         }
 
-        this.pos.pop();
+        if(this.addblock.pos[0] == this.pos[0][0] && this.addblock.pos[1] == this.pos[0][1]){
+            this.bodySections.push(document.createElement("div"));
+            this.bodySections[this.bodySections.length - 1].classList.add("snk-bdy");
+            document.querySelector("body").appendChild(this.bodySections[this.bodySections.length - 1]);
+
+            this.bodySections[this.bodySections.length - 1].style.left = `${this.pos[this.bodySections.length - 1][0]}px`;
+            this.bodySections[this.bodySections.length - 1].style.top = `${this.pos[this.bodySections.length - 1][1]}px`;
+
+            this.addblock.respawn();
+        }
+        else{
+            this.pos.pop();
+        }
 
 
         this.bodySections.forEach((element,index) => {
@@ -131,9 +145,32 @@ class Snake{
     
 }
 
+class addBlock{
+    constructor(){
+        this.pos = [400, 400]
+        this.display = document.createElement("div");
+        this.display.classList.add("snk-bdy");
+        document.querySelector("body").appendChild(this.display);
+
+        this.display.style.left = `${this.pos[0]}px`;
+        this.display.style.top = `${this.pos[1]}px`;
+    }
+
+    respawn(){
+        this.pos[0] = (Math.random()*window.innerWidth);
+        this.pos[0] -= this.pos[0] % 20;
+        this.pos[1] = (Math.random()*window.innerHeight);
+        this.pos[1] -= this.pos[1] % 20;
+
+        this.display.style.left = `${this.pos[0]}px`;
+        this.display.style.top = `${this.pos[1]}px`;
+    }
+}
+
 
 let snkbtn = document.querySelector("#snk");
 
 snkbtn.addEventListener('click', () => {
-    new Snake();
+    let addblock = new addBlock();
+    new Snake(addblock);
 });
