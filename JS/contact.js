@@ -147,9 +147,14 @@ class Snake{
 
 class addBlock{
     constructor(){
-        this.pos = [400, 400]
+        this.pos = [0, 0];
+        this.pos[0] = (Math.random()*window.innerWidth);
+        this.pos[0] -= this.pos[0] % 20;
+        this.pos[1] = (Math.random()*window.innerHeight);
+        this.pos[1] -= this.pos[1] % 20;
         this.display = document.createElement("div");
         this.display.classList.add("snk-bdy");
+        this.display.style.backgroundColor = "green"
         document.querySelector("body").appendChild(this.display);
 
         this.display.style.left = `${this.pos[0]}px`;
