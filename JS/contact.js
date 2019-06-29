@@ -88,7 +88,7 @@ class Snake {
             }
         };
 
-        setInterval(this.move.bind(this), 200);
+        setInterval(this.move.bind(this), 100);
     }
 
     move() {
@@ -130,6 +130,13 @@ class Snake {
                 }
             }
         })
+
+        if(this.pos[0][0] < 0 || this.pos[0][1] < 0){
+            this.restart();
+        }
+        else if(this.pos[0][0] > window.innerWidth || this.pos[0][1] > window.innerHeight){
+            this.restart();
+        }
 
         if (this.addblock.pos[0] == this.pos[0][0] && this.addblock.pos[1] == this.pos[0][1]) {
             this.bodySections.push(document.createElement("div"));
