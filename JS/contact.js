@@ -123,6 +123,14 @@ class Snake {
             this.pos.unshift([this.pos[0][0] - 20, this.pos[0][1]]);
         }
 
+        this.pos.forEach((element,index) => {
+            if(index != 0){
+                if(element[0] == this.pos[0][0] && element[1] == this.pos[0][1]){
+                    this.restart();
+                }
+            }
+        })
+
         if (this.addblock.pos[0] == this.pos[0][0] && this.addblock.pos[1] == this.pos[0][1]) {
             this.bodySections.push(document.createElement("div"));
             this.bodySections[this.bodySections.length - 1].classList.add("snk-bdy");
@@ -142,6 +150,10 @@ class Snake {
             this.bodySections[index].style.left = `${this.pos[index][0]}px`;
             this.bodySections[index].style.top = `${this.pos[index][1]}px`;
         });
+    }
+
+    restart(){
+        location.reload();
     }
 
 
