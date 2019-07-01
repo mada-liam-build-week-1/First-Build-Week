@@ -213,6 +213,12 @@ p {
   color: black;
   text-align: center;
 }
+.snk-bdy {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+}
 .about-page #about-us {
   display: block;
   font-size: 75px;
