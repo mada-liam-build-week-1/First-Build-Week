@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Document</title>
-  </head>
-  <body class="container">
-    <!-- Start of Navigation Section -->
-    <header>
-      <h1>GitHub User Breakdown</h1>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <script type="text/javascript" src="../JS/navigation.js" async></script>
+  <title>Home</title>
+</head>
+
+<body class="container">
+  <div id="content-section">
+  <!-- Start of Navigation Section -->
+  <header>
+    <h1 id="header-h1">G.U.B</h1>
+    <nav>
+        <a href="index.html">
+            <p>Home</p>
+        </a>
+        <a href="about.html" class="selected">
+            <p>About</p>
+        </a>
+        <a href="history.html">
+            <p>History</p>
+        </a>
+        <a href="contact.html" id="contact-us">
+            <p>Contact Us</p>
+        </a>
+      </nav>
+      <button id="nav-button">≡</button>
     </header>
     <!-- End of Navigation Section -->
 
-    <!-- Start of Main Section -->
-    <section class="main-section">
-      <div class="main-content">
-        <p>
-          We do something really 
-          <br />
-          useful, important, and unique. Learn all
-          <br />
-           about it here ...
+  <!-- Start of Main Section -->
+  <section class="main-section">
+    <div class="main-content">
+      <p>
+        We do something really
+        <br />
+        useful, important, and unique. Learn all
+        <br />
+        about it here ...
         </p>
-        <button>
-          <a href="">Go on, click me!</a>
-        </button>
-      </div>
+        <div class="button">
+            <a href="#">Go on, click me!</a>
+          </div>
+    </div>
+    <figure class='main-content'>
+        <img class="logo1" src="https://picsum.photos/350/350" alt="" />
 
-      <img class="logo1" src="https://picsum.photos/350/350" alt="" />
-    </section>
-    <!-- End of Main Section -->
+          </figure>
+  </section>
+  <!-- End of Main Section -->
+  </div>
 
-    <!-- Start of Footer Section -->
-    <section class="footer-section">
-      <!-- <h2>Lorem ipsum dolor sit amet.</h2> -->
-      <div class="footer-content">
-        <ul>
-          <h2>Developers</h2>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Open source</a></li>
-        </ul>
+  <!-- Start of Footer Section -->
+  <section class="footer-section">
+    <h6>&copy; 2019 GitHub User Breakdown</h6>
 
-        <ul>
-          <h2>Company</h2>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Customers</a></li>
-        </ul>
-        <aside>
-          <h2></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-            nesciunt accusamus modi laudantium dolorum odit labore praesentium
-            eaque magni quae?
-          </p>
-        </aside>
-      </div>
-    </section>
-    <!-- End of Footer Section -->
+  </section>
+  <!-- End of Footer Section -->
 
-    <!-- Start of Copyright Section --
-      <section>
-          <h6>&copy; Lorem ipsum dolor sit amet.</h6>
-      </section>
-      <!-- End of Copyright Section -->
-  </body>
-  <!-- container-->
+</body>
+<!-- container-->
+
 </html>

@@ -5,85 +5,110 @@
 <head>
     <meta charset="utf-8">
 
-    <title></title>
+    <title>About</title>
 
     <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../JS/carousel.js" async></script>
+    <script type="text/javascript" src="../JS/navigation.js" async></script>
 </head>
 
 <body class="about-page">
-    <header>
-        <h1>GitHub User Breakdown</h1>
-    </header>
+    <div id="content-section">
+        <header>
+            <h1 id="header-h1">G.U.B</h1>
+            <nav>
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="about.html" class="selected">
+                    <p>About</p>
+                </a>
+                <a href="history.html">
+                    <p>History</p>
+                </a>
+                <a href="contact.html" id="contact-us">
+                    <p>Contact Us</p>
+                </a>
+            </nav>
+            <button id="nav-button">≡</button>
+        </header>
 
-    <section>
-        <img src="" alt="">
-        <section>
-            <h2>Who we are</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui error tempora ea illum,
-                porro
-                nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
-                reiciendis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique assumenda
-                a?
-                Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse aspernatur,
-                fugiat
-                dolorem!</p>
+        <section id="carousel">
+            <button id="left-button">
+                <</button> <img src="../imgs/GitHub.png" alt="">
+                    <img src="../imgs/yancy-min-1536531-unsplash.jpg" class="hidden">
+                    <img src="../imgs/brina-blum-156977-unsplash.jpg" class="hidden">
+                    <button id="right-button">></button>
         </section>
 
-    </section>
-
-    <hr>
-
-    <section class="reverse">
-        <img src="" alt="">
+        <h1 id="about-us">About Us!</h1>
+        <hr>
         <section>
-            <h2>What we do</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui error tempora ea illum,
-                porro
-                nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
-                reiciendis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique assumenda
-                a?
-                Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse aspernatur,
-                fugiat
-                dolorem!</p>
+            <img src="../imgs/fabian-grohs-423591-unsplash.jpg" alt="">
+            <section>
+                <h2>Who we are</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui error tempora ea
+                    illum,
+                    porro
+                    nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
+                    reiciendis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique
+                    assumenda
+                    a?
+                    Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse
+                    aspernatur,
+                    fugiat
+                    dolorem!</p>
+            </section>
+
         </section>
 
-    </section>
+        <hr>
 
-    <hr>
+        <section class="reverse">
+            <img src="../imgs/annie-spratt-608001-unsplash.jpg" alt="">
+            <section>
+                <h2>What we do</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui error tempora ea
+                    illum,
+                    porro
+                    nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
+                    reiciendis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique
+                    assumenda
+                    a?
+                    Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse
+                    aspernatur,
+                    fugiat
+                    dolorem!</p>
+            </section>
 
-    <section>
-        <img src="" alt="">
-        <section>
-            <h2>Why?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui error tempora ea illum,
-                porro
-                nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
-                reiciendis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique assumenda
-                a?
-                Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse aspernatur,
-                fugiat
-                dolorem!</p>
         </section>
 
-    </section>
+        <hr>
 
-    <hr>
+        <section>
+            <img src="../imgs/farzad-nazifi-71686-unsplash.jpg" alt="">
+            <section>
+                <h2>Why?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio, qui      error tempora ea
+                    illum,
+                    porro
+                    nulla fugiat reiciendis laudantium consequatur, magni maiores mollitia. Hic magni quos ab at
+                    reiciendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto illo similique
+                    assumenda
+                    a?
+                    Optio magni sit praesentium odio, beatae possimus, non ipsam ullam et obcaecati quae esse
+                    aspernatur, fugiat dolorem!
+                </p>
+            </section>
 
-    <section class = "contact-us">
-            <h2>Get in Touch</h2>
-            <h4>Name</h4>
-            <input type="text" id="full-name">
-            <h4>E-Mail</h4>
-            <input type="text" id="email">
-            <h4>Whats Up?</h4>
-            <textarea id="contact-body" cols="30" rows="10"></textarea>
-    </section>
+        </section>
+    </div>
 
-    <footer>
-
-    </footer>
+    <div class="footer-section">
+        <h6>&copy; 2019 GitHub User Breakdown</h6>
+    </div>
 </body>
 
 </html>

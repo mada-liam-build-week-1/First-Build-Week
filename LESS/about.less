@@ -1,22 +1,17 @@
 .about-page{
-    header{
-        width: 100%;
-        height: 75px;
-        background-color: @sapphire;
-        h1{
-            display: flex;
-            width: 40%;
-            height: 100%;
-            font-size: 48px;
-            line-height: 75px;
-            color: white;
-        }
+
+    #about-us{
+        display: block;
+        font-size: 75px;
+        text-align: center;
+        margin-top: 40px;
     }
 
     section{
         margin: 50px auto;
         display: flex;
         width: 80%;
+        align-items: center;
         @media (max-width:800px){
             flex-direction: column;
         }
@@ -30,6 +25,7 @@
             h2{
                 height: 20%;
                 width: 100%;
+                margin-bottom: 10px;
             }
             p{
                 height: 80%;
@@ -38,10 +34,10 @@
         }
         img{
             width: 40%;
-            background-color: aqua;
+            height: 100%;
             @media (max-width:800px){
                 width: 100%;
-                height: 200px;
+                height: auto;
             }
         }
     }
@@ -52,33 +48,83 @@
             flex-direction: column;
         }
     }
-
-    .contact-us{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        h2{
-            width: 100%;
-            margin-bottom: 5px;
-        }
-        h4{
-            font-size: 18px;
-            margin-top: 5px;
-        }
-        input{
-           width: 50%; 
-           margin: 10px 0px;
-        }
-    }
     
     hr{
         width: 80%;
         margin: 20px auto;
     }
 
-    footer{
+    #carousel{
+        height: 40vw;
+        display: flex;
         width: 100%;
-        height: 75px;
-        background-color: @sapphire;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        @media (max-width:800px){
+            flex-direction: row;
+            margin-top: 10px;
+            height: 60vw;
+        }
+        .hidden{
+            display: none;
+        }
+        img{
+            width:auto;
+            height: 100%;
+            @media (max-width:800px){
+                width:80%;
+                height: auto;
+            }
+            @media (max-width:500px){
+                width:100%;
+                height: auto;
+            }
+        }
+        #right-button{
+            margin-right: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            @media (max-width:1000px){
+                margin-right: 10vw;
+            }
+            @media (max-width:800px){
+                margin-right: 2vw;
+            }
+            @media (max-width:500px){
+                position: absolute;
+                right: 15px;
+                margin-right: 0px;
+                width: 30px;
+                height: 30px;
+                background-color:#011f4b90;
+            }
+        }
+        #left-button{
+            margin-left: 15vw;
+            color:white;
+            background-color: @prussian-blue;
+            border-width: 1px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            @media (max-width:1000px){
+                margin-left: 10vw;
+            }
+            @media (max-width:800px){
+                margin-left: 2vw;
+            }
+            @media (max-width:500px){
+                position: absolute;
+                left: 15px;
+                margin-left:0px;
+                width: 30px;
+                height: 30px;
+                background-color:#011f4b90;
+            }
+        }
     }
 }
